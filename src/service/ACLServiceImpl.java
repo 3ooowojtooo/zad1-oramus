@@ -4,6 +4,7 @@ import interfaces.ACLi;
 import interfaces.Datagram;
 import model.acl.ACLEntry;
 import model.acl.ACLModel;
+import model.acl.EntryChainElement;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -29,7 +30,8 @@ public enum ACLServiceImpl implements ACLService {
     @Override
     public ACLi.Result test(Integer aclId, Datagram datagram) {
         ACLModel acl = accessControlLists.get(aclId);
-
+        EntryChainElement chain = acl.toChain();
+        return chain.test(datagram);
     }
 
 

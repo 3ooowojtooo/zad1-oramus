@@ -4,6 +4,9 @@ import model.address.Address;
 import model.address.NetworkAddress;
 import model.composite.GroupCompositeElement;
 
+/**
+ * Singleton design pattern
+ */
 public interface GroupService {
 
     Integer createNewGroup();

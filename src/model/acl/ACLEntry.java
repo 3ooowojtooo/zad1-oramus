@@ -11,4 +11,12 @@ public class ACLEntry {
         this.condition = condition;
         this.result = result;
     }
+
+    public ACLi.Condition getCondition() {
+        return condition;
+    }
+
+    public ACLi.Result getResult() {
+        return result;
+    }
 }

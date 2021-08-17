@@ -9,5 +9,4 @@ import interfaces.Datagram;
 public interface EntryChainElement {
 
     ACLi.Result test(Datagram datagram);
-    void setNext(EntryChainElement nextElement);
 }

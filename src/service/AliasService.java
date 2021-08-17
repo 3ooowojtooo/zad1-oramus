@@ -3,6 +3,9 @@ package service;
 import model.address.Address;
 import model.address.NetworkAddress;
 
+/**
+ * Singleton design pattern
+ */
 public interface AliasService {
 
     void addHost(String hostAddress, String hostName);

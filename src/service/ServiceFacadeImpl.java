@@ -89,6 +89,6 @@ public enum ServiceFacadeImpl implements ServiceFacade {
 
     @Override
     public ACLi.Result test(Integer aclID, Datagram datagram) {
-        return null;
+        return aclService.test(aclID, datagram);
     }
 }
